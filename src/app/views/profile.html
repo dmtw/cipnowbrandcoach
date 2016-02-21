@@ -1,11 +1,17 @@
 <!-- TODO: Add validations -->
-<md-content md-theme="dark" class="md-padding" layout="row" layout-sm="column">
+<div class=" md-whiteframe-z1" layout-fill layout-align="center center" layout="column" style="height: 100%;">
+    <div hide-sm hide-md class="md-tile-content" layout-fill layout-padding  layout="column" layout-align="center center" >
+        <h1><i class="material-icons md-96">face</i> Your Profile</h1>
+
+    </div>
+</div>
+<md-content md-theme="" class="md-padding" layout="row" layout-sm="column">
     <md-input-container>
-        <label>Username</label>
+        <label><h3>Username</h3></label>
         <input ng-model="vm.user.title">
     </md-input-container>
     <md-input-container>
-        <label>Email</label>
+        <label><h3>Email</h3></label>
         <input ng-model="vm.user.email" type="email">
     </md-input-container>
 </md-content>
@@ -43,7 +49,7 @@
             </md-input-container>
             <md-input-container flex>
                 <label>State</label>
-                <input ng-model="user.state">
+                <input ng-model="vm.user.state">
             </md-input-container>
             <md-input-container flex>
                 <label>Postal Code</label>

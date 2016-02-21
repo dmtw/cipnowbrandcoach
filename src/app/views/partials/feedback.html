@@ -1,0 +1,10 @@
+<md-content ng-controller="FeedbackController as vm" class="md-padding" layout="row">
+  <div flex>
+    <nvd3 options="vm.storeChartOptions" data="vm.storeChartData"></nvd3>
+    <h4 class="donut-chart-title">Stores</h4>
+  </div>
+  <div flex>
+    <nvd3 options="vm.eventChartOptions" data="vm.eventChartData"></nvd3>
+    <h4 class="donut-chart-title">Events</h4>
+  </div>
+</md-content>

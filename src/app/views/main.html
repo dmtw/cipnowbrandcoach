@@ -1,9 +1,10 @@
 <md-sidenav md-is-locked-open="$mdMedia('gt-sm')" md-component-id="left"
             class="md-whiteframe-z2 md-sidenav-left">
-  <md-toolbar md-theme="custom" class="md-hue-1 md-whiteframe-z2">
+  <md-toolbar md-theme="" class="md-whiteframe-z2">
     <md-button layout="row" layout-align="center center" class="md-toolbar-tools md-warn"
                href="https://github.com/flatlogic/angular-material-dashboard">
-      <h1>AMD</h1>
+      <!--<h1>cipNow</h1>-->
+        <img class="" ng-src="assets/images/signet_cip.png">
     </md-button>
   </md-toolbar>
       <md-button ng-repeat-start="item in vm.menuItems" layout="column" layout-align="center center"
@@ -42,7 +43,7 @@
     </md-toolbar>
 
     <md-content flex class="md-padding page-content">
-        <div ui-view></div>
+        <div ui-view layout-fill></div>
     </md-content>
 </div>
 

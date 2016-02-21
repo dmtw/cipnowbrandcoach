@@ -23,7 +23,7 @@
         date: '1918',
         text: 'For the services he rendered to the advancement of physics by his discovery of energy quanta.'
       },
-      {
+      /*{
         userPhoto : '/assets/images/user.svg',
         subject: 'Photoelectric effect',
         userName: 'Albert Einstein',
@@ -36,7 +36,7 @@
         userName: 'Niels Bohr',
         date: '1922',
         text: 'For his services in the investigation of the structure of atoms and of the radiation emanating from them'
-      },
+      },*/
       {
         userPhoto : '/assets/images/user.svg',
         subject: 'Wave equation',

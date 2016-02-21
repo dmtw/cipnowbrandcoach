@@ -9,9 +9,9 @@
 
   function todoList($q){
     var todos = [
-      {text: 'Continuous integration', done: false},
-      {text: 'Implement panel-widget directive', done: true},
-      {text: 'Add backend', done: false}
+      {text: 'Write Bills', done: false},
+      {text: 'Rerquest Coaching', done: true},
+      {text: 'Cancel Appointment @ Sport Scheck', done: false}
     ];
 
     return {

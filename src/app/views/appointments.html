@@ -1,0 +1,49 @@
+<!-- TODO: Replace table to table component when https://github.com/angular/material/issues/796 will closed -->
+<div class=" md-whiteframe-z1" layout-fill layout-align="center center" layout="column" style="height: 100%;">
+    <div hide-sm hide-md class="md-tile-content" layout-fill layout-padding  layout="column" layout-align="center center" >
+        <h1><i class="material-icons md-96">schedule</i> Your Appointments</h1>
+
+    </div>
+</div>
+<div class="table-responsive-vertical md-whiteframe-z1">
+    <table id="table" class="table table-hover table-bordered">
+        <thead>
+        <tr>
+            <th>#</th>
+            <th>Store</th>
+            <th>Date</th>
+            <th>Status</th>
+            <th>Participate</th>
+        </tr>
+        </thead>
+        <tbody>
+        <!--<md-list-item class="md-2-line">
+            <img ng-src="{{todos[0].face}}?20" class="md-avatar" alt="{{todos[0].who}}" />
+            <div class="md-list-item-text">
+                <h3>{{ todos[0].who }}</h3>
+                <p>Secondary text</p>
+            </div>
+        </md-list-item>-->
+        <tr ng-repeat="data in vm.appointmentsData | filter: { assign: true} track by $index" class="md-2-line">
+            <td data-title="ID" class="md-list-item-text">
+                <h3>{{$index + 1}}</h3>
+            </td>
+            <td data-title="Store" class="md-list-item-text">
+                <h3> {{data.store}}</h3>
+                <p>{{data.location}}</p>
+            </td>
+            <td data-title="Date" class="md-list-item-text">
+                <p>{{data.date}}</p>
+            </td>
+            <td data-title="Status" class="md-list-item-text">
+                <p>{{data.status}}</p>
+            </td>
+            <td data-title="Assignment" class="md-list-item-text">
+                <p><md-switch ng-model="data.assign" aria-label="Switch 1" class="table-progress ">
+                </md-switch></p>
+            </td>
+
+        </tr>
+        </tbody>
+    </table>
+</div>
